@@ -39,19 +39,6 @@ Git & GitHub
 Environment variables (.env)
 
 Postman for API testing
-
-📂 Project Structure
-
-eco-travel/
- ├── backend/
- │   ├── server.js
- │   ├── package.json
- │   ├── .env.example
- │   └── routes/
- ├── frontend/
- ├── .gitignore
- └── README.md
-
  
 🌍 Sustainability Impact
 
