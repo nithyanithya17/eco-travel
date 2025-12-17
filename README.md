@@ -41,6 +41,7 @@ Environment variables (.env)
 Postman for API testing
 
 📂 Project Structure
+
 eco-travel/
  ├── backend/
  │   ├── server.js
@@ -50,6 +51,8 @@ eco-travel/
  ├── frontend/
  ├── .gitignore
  └── README.md
+
+ 
 🌍 Sustainability Impact
 
 Eco-Travel supports sustainable development goals by:
