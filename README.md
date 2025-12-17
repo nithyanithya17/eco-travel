@@ -50,4 +50,22 @@ eco-travel/
  ├── frontend/
  ├── .gitignore
  └── README.md
+🌍 Sustainability Impact
 
+Eco-Travel supports sustainable development goals by:
+
+Raising awareness about carbon emissions
+
+Encouraging responsible travel behavior
+
+Supporting climate-conscious decision-making
+
+🚀 Future Enhancements
+
+User authentication and profiles
+
+Real-time emission analytics
+
+Travel recommendations with lower emissions
+
+Cloud deployment (AWS / Firebase)
