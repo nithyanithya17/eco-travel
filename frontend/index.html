@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eco Travel Safety & Air Quality Advisor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+
+
+<body>
+
+    <!-- Sidebar Toggle Button -->
+    <div class="sidebar-btn" onclick="toggleSidebar()">☰ Profile</div>
+
+    <!-- USER SIDEBAR -->
+    <div id="userSidebar" class="sidebar">
+        <span class="close-btn-left" onclick="toggleSidebar()">✖</span>
+
+        <div class="sidebar-header">
+            <h2>👤 Your Profile</h2>
+        </div>
+
+        <img id="profilePic" class="profile-pic" src="default.png">
+
+        <p class="user-field"><b>Name:</b> <span id="userName">Not Signed In</span></p>
+        <p class="user-field"><b>Email:</b> <span id="userEmail"></span></p>
+
+        <!-- Google Login Button (custom design) -->
+        <div class="google-login-wrapper" id="showLoginBtn">
+            <div id="g_id_onload"
+                data-client_id="577071431130-7tmfvnbaer6tr6n82r3e2g81erqbn5c0.apps.googleusercontent.com"
+                data-callback="handleCredentialResponse">
+            </div>
+
+            <div class="google-custom-btn" onclick="manualGoogleLogin()">
+                <img src="google.png" class="google-icon">
+                Sign in with Google
+            </div>
+
+            <div class="g_id_signin" data-type="standard"></div>
+        </div>
+
+        <!-- Sign Out Button -->
+        <div id="signOutBtn" class="logout-btn" onclick="signOut()" style="display:none;">
+            🔓 Sign Out
+        </div>
+    </div>
+
+    <div class="container animate-fade">
+
+        <div class="info-banner animate-slide-down">
+            🌱 Empowering safe & eco-friendly travel decisions.
+        </div>
+
+        <h1 class="title animate-slide-down">🌍 Eco-Travel Safety & Air Quality Advisor</h1>
+
+        <p class="subtitle animate-fade-delayed">
+            Analyze travel safety, air quality & environmental health instantly.
+        </p>
+
+        <!-- Feature Cards -->
+        <div class="feature-section">
+            <div class="feature-card animate-pop">
+                <h3>🛡 Travel Safety</h3>
+                Real-time advisory levels for global destinations.
+            </div>
+
+            <div class="feature-card animate-pop">
+                <h3>🌫 Air Quality Index</h3>
+                Global PM2.5, PM10, ozone & more.
+            </div>
+
+            <div class="feature-card animate-pop">
+                <h3>⛅ Weather Insights</h3>
+                Temperature, climate & safety predictions.
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-section animate-pop">
+            <input type="text" id="searchInput" class="input-box" placeholder="Search country (e.g., Sri Lanka)">
+            <button class="primary-btn ripple" onclick="getData()">🔍 Search</button>
+        </div>
+
+        <div class="center-wrapper"><div id="flagBox" class="flag-box hidden animate-fade"></div></div>
+        <div class="center-wrapper"><div id="resultBox" class="glass-card hidden animate-zoom"></div></div>
+
+        <div class="center-wrapper">
+            <div class="results-button-group">
+                <button onclick="saveData()" class="secondary-btn ripple">💾 Save</button>
+                <button onclick="loadHistory()" class="history-btn ripple">📜 History</button>
+            </div>
+        </div>
+
+        <div class="center-wrapper">
+            <div id="historyBox" class="glass-card hidden animate-zoom"></div>
+        </div>
+
+        <footer class="footer">Eco-Travel Advisor © 2025 | Mini Project 💙</footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
